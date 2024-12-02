@@ -283,7 +283,40 @@
                              
     <div class="swim-lane">
         
-        <div class="task" draggable="true">      <button type="button" class="openbox" data-toggle="modal" data-target="#exampleModalCenter">Binge 80 hours of Game of Thrones</button></div>
+        <div class="task" draggable="true">      <button type="button" class="openbox" data-toggle="modal" data-target="#exampleModalLong">Binge 80 hours of Game of Thrones</button></div>
+      </div>
+
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+           
+            <div class="modal-body">
+    
+              <div class="card-innerbox">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                <div class="imagebox">
+                <div class="button" onclick="chooseImage()">
+                    <i class="fa fa-file-image-o" aria-hidden="true"></i> Add an image
+                </div>
+                <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="displayImage(event)">
+                <div id="imagePreview" style="margin-top: 10px;"></div>
+            </div>
+            
+    
+             <div class="descriptionbox">
+                <textarea rows="4" cols="50" placeholder="Write a Message..."></textarea>
+             </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
+    
+            </div>
+          </div>
+        </div>
       </div>
                             </div>
                             
@@ -299,9 +332,41 @@
                                 <div class="swim-lane">
                                     
                               
-                                    <div class="task" draggable="true">      <button type="button" class="openbox" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <div class="task" draggable="true">      <button type="button" class="openbox" data-toggle="modal" data-target="#exampleModalLong">
                                       Watch video of a man raising a grocery store lobster as a pet
                                     </button></div>
+                                  </div>
+                                  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                       
+                                        <div class="modal-body">
+                                
+                                          <div class="card-innerbox">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            <div class="imagebox">
+                                            <div class="button" onclick="chooseImage()">
+                                                <i class="fa fa-file-image-o" aria-hidden="true"></i> Add an image
+                                            </div>
+                                            <input type="file" id="imageInput" accept="image/*" style="display: none;" onchange="displayImage(event)">
+                                            <div id="imagePreview" style="margin-top: 10px;"></div>
+                                        </div>
+                                        
+                                
+                                         <div class="descriptionbox">
+                                            <textarea rows="4" cols="50" placeholder="Write a Message..."></textarea>
+                                         </div>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
+                                
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
                             </div>
                             
