@@ -12,7 +12,7 @@ form.addEventListener("submit", (e) => {
   newTask.classList.add("openbox");
   newTask.setAttribute("draggable", "true");
   newTask.setAttribute("data-toggle", "modal");
-  newTask.setAttribute("data-target", "#exampleModalCenter");
+  newTask.setAttribute("data-target", "#exampleModalLong");
   newTask.innerText = value;
 
   newTask.addEventListener("dragstart", () => {
